@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Using Object Model</title>
+</head>
+<body>
+	<p th:text="${captureVariableName}"></p>
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>POPULARITY</th>
+				<th>RATING</th>
+				<th>DATE</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="alias:${captureVariableName}">
+				<td th:text="${alias.id}"></td>
+				<td th:text="${alias.name}"></td>
+				<td th:text="${alias.popularity}"></td>
+				<td th:text="${alias.rating}"></td>
+				<td th:text="${alias.date}"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
