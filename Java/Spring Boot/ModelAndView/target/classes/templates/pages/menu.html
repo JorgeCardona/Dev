@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vegetarians Menus</title>
+</head>
+<body>
+
+	<p th:text="${captureVariableName}"></p>
+	<table>
+		<thead>
+			<tr>
+				<td>Id</td>
+				<td>Vegitarian</td>
+				<td>Calaries</td>
+				<td>Type</td>
+			</tr>
+		</thead>
+		
+		<tr th:each="alias:${captureVariableName}">
+			<td th:text="${alias.name}"></td>
+			<td th:text="${alias.vegetarian}"></td>
+			<td th:text="${alias.calaries}"></td>
+			<td th:text="${alias.type}"></td>
+		</tr>
+	</table>
+</body>
+</html>
