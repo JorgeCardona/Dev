@@ -18,7 +18,6 @@ public class DataGenerator{
 
 		ArrayList<MenuCarta> menucarta = new ArrayList<>();
 		
-		
 		Random ram = new Random();
 		
 		for (int i = 1;i<=10;i++) {			
