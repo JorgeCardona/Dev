@@ -10,17 +10,22 @@ public class ProgrammingLanguages {
 	private int rating;
 	private Date date;
 	
-	public ProgrammingLanguages() {
+	public ProgrammingLanguages(int id) {
 		// TODO Auto-generated constructor stub
+		this.id = id;
 	}
 	
+	public ProgrammingLanguages() {
+		// TODO Auto-generated constructor stub
+
+	}
 	
-	public ProgrammingLanguages(int id, String name, double popularity, int rating, Date date) {
+	public ProgrammingLanguages(int id, String name, double popularity, int rating) {
 		this.id = id;
 		this.name = name;
 		this.popularity = popularity;
 		this.rating = rating;
-		this.date = date;
+
 	}
 
 

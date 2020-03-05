@@ -1,7 +1,7 @@
 package com.project.controllers;
 
 import java.util.ArrayList;
-// libreria que permite validar si un metodo dato es de algun tipo, por ejemplo númerico
+// libreria de la dependencia "commons-lang3" para validar tipo de dato como por ejemplo númerico
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

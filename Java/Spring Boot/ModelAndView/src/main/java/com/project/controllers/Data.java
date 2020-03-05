@@ -20,5 +20,4 @@ public class Data {
 		// retorna la pagina del endpoint
 		return endPointPage;
 	}
-
 }

@@ -19,6 +19,9 @@ public class HomeArticles {
 		this.date = date;
 	}
 
+	public HomeArticles() {
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @return the id

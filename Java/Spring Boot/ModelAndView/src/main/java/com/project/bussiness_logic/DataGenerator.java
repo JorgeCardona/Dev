@@ -52,7 +52,7 @@ public class DataGenerator{
 			Double number_double = Double.valueOf(df.format(ram.nextDouble()));
 			
 			
-			languages.add(new ProgrammingLanguages ( i,String.valueOf( i*ram.nextInt(max_value)),number_double,  ram.nextInt(max_value), new Date()));
+			languages.add(new ProgrammingLanguages ( i,String.valueOf( i*ram.nextInt(max_value)),number_double,  ram.nextInt(max_value)));
 			
 		}
 		
@@ -61,6 +61,7 @@ public class DataGenerator{
 		}else {
 			languages = (ArrayList<ProgrammingLanguages>) languages.stream().filter(d -> d.getId() == id).collect(Collectors.toList());
 		}
+		languages.add(new ProgrammingLanguages ( 8,"---",10.5,  8));
 		
 		return languages;
 				

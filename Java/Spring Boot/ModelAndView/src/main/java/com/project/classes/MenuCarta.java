@@ -5,6 +5,10 @@ public class MenuCarta {
      private Boolean vegetarian;
      private Integer calaries;
      private Type type;
+     
+     public MenuCarta() {
+		// TODO Auto-generated constructor stub
+	}
 
      public MenuCarta (String name, Boolean vegetarian, Integer calaries, Type type) {
           super();
@@ -13,7 +17,17 @@ public class MenuCarta {
           this.calaries = calaries;
           this.type = type;
      }
+     
+     
+     public MenuCarta (String name, Boolean vegetarian, Integer calaries) {
+         super();
+         this.name = name;
+         this.vegetarian = vegetarian;
+         this.calaries = calaries;
 
+    }
+    
+     
      public enum Type { MEAT, FISH, CHIKEN ,OTHER }
 
 	/**
